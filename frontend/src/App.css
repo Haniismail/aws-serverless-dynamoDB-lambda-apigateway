@@ -1,0 +1,48 @@
+#root { max-width: 840px; margin: 0 auto; padding: 2rem; }
+.app { display: flex; flex-direction: column; gap: 1rem; }
+.todo-form { display: flex; gap: 0.5rem; }
+.todo-form input { flex: 1; padding: 0.5rem; }
+.todo-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.todo-list li { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 6px; }
+.todo-main { display: flex; align-items: center; gap: 0.75rem; }
+.todo-text { display: flex; flex-direction: column; text-align: left; }
+.todo-text .title { font-weight: 600; }
+.todo-text .desc { color: #555; font-size: 0.9rem; }
+.todo-list li.done .title { text-decoration: line-through; color: #777; }
+.delete { background: #ffefef; border: 1px solid #f5c2c2; }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

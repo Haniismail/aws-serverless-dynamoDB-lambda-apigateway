@@ -1,0 +1,24 @@
+# Server/Stage
+PORT=3001
+STAGE=dev
+REGION=us-east-1
+
+# DynamoDB
+DYNAMODB_TABLE=serverless-todo-api-dev
+
+# AWS Credentials (local/dev; use profiles in CI)
+# Fill these with your IAM user keys, or leave empty if using AWS profiles
+AWS_ACCESS_KEY_ID=aws-access-key-id
+AWS_SECRET_ACCESS_KEY=aws-secret-access-key
+# AWS_SESSION_TOKEN=   # only if using temporary credentials (STS/SSO)
+
+# CORS
+CORS_ORIGIN=*
+
+# JWT (not used for auth now, but kept for compatibility)
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+JWT_EXPIRES_IN=7d
+
+# Email (optional)
+EMAIL_FROM=noreply@todo-api.com
+
