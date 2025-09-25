@@ -1,0 +1,41 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+.idea
+data
+keys
+# macOS
+.DS_Store
+# ignore vs code project config files
+.vs
+.vscode
+# ignore logs
+logs
+*.log
+
+# ignore 3rd party lib
+node_modules
+
+# ignore key
+*.pem
+
+# Ignore built files
+build
+
+# ignore test converage
+coverage
+
+# Build outputs
+dist
+.serverless
+
+# Environment variables (never commit)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# npm config (may contain tokens)
+.npmrc
+**/mongo-data/**
+mongo-data
