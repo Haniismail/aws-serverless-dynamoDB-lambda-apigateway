@@ -9,7 +9,7 @@ Full‑stack CRUD todos with a React frontend and a serverless backend. Locally,
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │    │   API Gateway   │    │   Lambda        │
-│   (S3 Hosted)   │◄──►│   (REST API)    │◄──►│   (Express.js)  │
+│                 │◄──►│   (REST API)    │◄──►│   (Express.js)  │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
                                                         │
                                                         ▼
